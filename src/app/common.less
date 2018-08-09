@@ -1,0 +1,133 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 12px;
+  #app {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// 颜色样式
+@white_color: #ffffff;
+@green_color: #00caa0;
+@red_color: #ff509a;
+@blue_color: #0094da;
+@orange_color: #fe723a;
+@black_color: #333333;
+@pray_font_color: #999999;
+@pray_btn_color: #b9b9b9;
+@black_light_color: #666666;
+@border_second_color: #d8d8d8;
+@border_aph_color: rgba(216, 216, 216, 0.6);
+@pray_bg_color: #ebebeb;
+@pray_time_color: #cecece; // 字体样式
+@small_sm_font: 1rem;
+@small_md_font: 1.167rem;
+@small_lg_font: 1.25rem;
+@normal_sm_font: 1.333rem;
+@normal_md_font: 1.5rem;
+@normal_lg_font: 1.92rem;
+@large_md_font: 2.5rem;
+@large_lg_font: 3.333rem;
+// 页面滚动条设置
+.body_scroll {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+  .body_scroll_wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: relative;
+    .page_title {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+    }
+  }
+}
+
+/*清除浮动 */
+
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: block;
+}
+
+// 背景颜色
+.pray_bg {
+  background-color: @pray_bg_color;
+}
+
+// 标题样式
+.page_title_all {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  background: @green_color;
+  padding: 15px 0 !important;
+  line-height: 20px;
+  font-size: @normal_sm_font;
+  color: @white_color;
+}
+
+// 车牌号查询样式
+.search_not_login {
+  width: 100%;
+  .search_license {
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+    .search_license_supply {
+      text-align: center;
+      width: 100%;
+      margin: 40px auto;
+      color: @black_color;
+      font-size: @normal_sm_font;
+      line-height: 20px;
+    }
+  } //   提交按钮样式
+  .search_submit {
+    display: block !important;
+    width: 280px !important;
+    margin: 60px auto 0 auto;
+    background-color: @green_color !important;
+    font-size: @normal_sm_font !important;
+    padding: 0 !important;
+    height: 40px !important;
+    line-height: 40px !important;
+    border-radius: 4px !important;
+  }
+  .search_submit.weui-btn:after {
+    border: none !important;
+  }
+  .weui-btn_disabled.search_submit.weui-btn_primary {
+    background: rgba(0, 202, 160, 0.5) !important;
+    color: #ffffff;
+  }
+}
+
+.car_content {
+  margin-top: 100px !important;
+}

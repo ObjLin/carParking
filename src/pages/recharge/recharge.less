@@ -1,0 +1,167 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+// 颜色样式
+@white_color: #ffffff;
+@green_color: #00caa0;
+@red_color: #ff509a;
+@blue_color: #0094da;
+@orange_color: #fe723a;
+@black_color: #333333;
+@pray_font_color: #999999;
+@pray_btn_color: #b9b9b9;
+@black_light_color: #666666;
+@border_second_color: #d8d8d8;
+@border_aph_color: rgba(216, 216, 216, 0.6);
+@pray_bg_color: #ebebeb;
+@pray_time_color: #cecece; // 字体样式
+@small_sm_font: 1rem;
+@small_md_font: 1.167rem;
+@small_lg_font: 1.25rem;
+@normal_sm_font: 1.333rem;
+@normal_md_font: 1.5rem;
+@normal_lg_font: 1.92rem;
+@large_md_font: 2.5rem;
+@large_lg_font: 3.333rem;
+.recharge_content {
+  .recharge_select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 16px;
+    .weui-cells__title {
+      margin: 20px auto 10px 0;
+      line-height: 20px;
+      font-size: @small_md_font;
+      color: @pray_font_color;
+      padding: 0;
+    }
+    .weui-cells {
+      border-radius: 4px;
+      .weui-select {
+        color: @black_color;
+        font-size: @normal_md_font;
+      }
+    }
+    .weui-cells:before,
+    .weui-cells:after {
+      border: none !important;
+    }
+    .weui-cell_select .weui-cell__bd:after {
+      border-width: 0 2px 2px 0;
+      width: 8px;
+      height: 8px;
+      border-color: @pray_font_color;
+    }
+  }
+  .recharge_month {
+    .weui-cells {
+      background: transparent !important;
+    }
+    .recharge_input_total {
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      .recharge_input {
+        width: 200px;
+        display: inline-flex;
+        align-items: center;
+        overflow: hidden;
+        margin-right: 20px;
+        .weui-btn {
+          display: block;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          padding: 0;
+          box-sizing: border-box;
+          background: @white_color;
+          border-radius: 0;
+          color: @green_color;
+          font-size: @normal_lg_font;
+          margin: 0;
+        }
+        .weui-btn:before,
+        .weui-btn:after {
+          border: none !important;
+          border-radius: 0 !important;
+        }
+        .weui-cell:before {
+          border: none !important;
+        }
+        .weui-btn:first-child {
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          border-right: 1px solid @border_aph_color;
+        }
+        .weui-btn:last-child {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+          border-left: 1px solid @border_aph_color;
+        }
+        .weui-cell {
+          padding: 0;
+        }
+        .weui-input {
+          display: block;
+          width: 50px;
+          height: 40px;
+          background: @white_color;
+          text-align: center;
+          color: @black_color;
+          font-size: @normal_md_font;
+        }
+      }
+      .recharge_text {
+        color: @pray_font_color;
+        font-size: @small_md_font;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+// 底部固定按钮
+.recharge_bottom_total {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: @white_color;
+  display: flex;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  p {
+    color: @black_color;
+    font-size: @small_md_font;
+    float: left;
+    display: inline-flex;
+    align-items: center;
+    span {
+      font-size: @normal_lg_font;
+      margin-right: 5px;
+    }
+  }
+  .recharge_btn {
+    text-align: right;
+    width: 100%;
+    display: block !important;
+    .weui-btn {
+      display: inline-block;
+      text-align: center;
+      width: 120px;
+      border-radius: 4px;
+      background: @green_color;
+      box-sizing: border-box;
+      padding: 0;
+    }
+    .weui-btn:after {
+      border: none !important;
+    }
+  }
+}

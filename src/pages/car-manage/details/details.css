@@ -1,0 +1,91 @@
+.car_details_card {
+  margin: 16px !important;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 0 16px;
+}
+.car_details_card .car_details_header {
+  width: 100%;
+  box-sizing: border-box;
+}
+.car_details_card .car_details_header h1 {
+  margin: 10px 0;
+}
+.car_details_card .car_details_header h1 span {
+  display: block;
+  float: left;
+  color: #333333;
+  font-size: 1.333rem;
+  font-weight: 500;
+  line-height: 20px;
+}
+.car_details_card .car_details_header h1 .weui-btn {
+  display: block;
+  float: right;
+  background: transparent;
+  width: auto;
+  line-height: 20px;
+  padding: 0;
+}
+.car_details_card .car_details_header h1 .weui-btn img {
+  width: 18px;
+}
+.car_details_card .car_details_header h1 .weui-btn:after {
+  border: none !important;
+}
+.car_details_card .car_details_header .car_details_list {
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+}
+.car_details_card .car_details_header .car_details_list p {
+  box-sizing: border-box;
+  padding: 0 10px 0 0;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333333;
+  font-weight: 600;
+}
+.car_details_card .car_details_header .car_details_list p span {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: #00caa0;
+  margin-right: 10px;
+}
+.car_details_card .car_details_content {
+  width: 100%;
+}
+.car_details_card .car_details_content .weui-cells {
+  margin-top: 0 !important;
+  padding: 20px 0 10px 0;
+}
+.car_details_card .car_details_content .weui-cells:before {
+  border-top: 1px dashed rgba(216, 216, 216, 0.6);
+}
+.car_details_card .car_details_content .weui-cells:after {
+  border: none !important;
+}
+.car_details_card .car_details_content .weui-cell {
+  padding: 0;
+  margin-bottom: 10px;
+}
+.car_details_card .car_details_content .weui-cell:before {
+  border: none !important;
+}
+.car_details_card .car_details_content .vux-label {
+  color: #999999;
+  font-size: 1.167rem;
+}
+.car_details_card .car_details_content .weui-cell__ft {
+  color: #333333;
+  font-size: 1.167rem;
+  margin-top: 3px;
+}
+.car_details_card.weui-panel:after,
+.car_details_card.weui-panel:before {
+  border: none !important;
+}

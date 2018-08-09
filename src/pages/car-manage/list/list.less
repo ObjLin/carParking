@@ -1,0 +1,94 @@
+// 颜色样式
+@white_color: #ffffff;
+@green_color: #00caa0;
+@red_color: #ff509a;
+@blue_color: #0094da;
+@orange_color: #fe723a;
+@black_color: #333333;
+@black_light_color: #666666;
+@border_aph_color: rgba(216, 216, 216, 0.6);
+// 字体样式
+@small_md_font: 1.167rem;
+@normal_md_font: 1.5rem;
+@large_lg_font: 3.333rem;
+.car_list_total {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 16px;
+  .weui-cells {
+    margin-top: 16px !important;
+    background: transparent;
+  }
+  .weui-cell {
+    margin-bottom: 16px;
+    background: @white_color;
+    border-radius: 4px;
+    position: relative;
+    .vux-label {
+      color: @black_color;
+      font-size: @normal_md_font;
+      font-weight: 600;
+    }
+    .weui-cell__ft {
+      color: @black_light_color;
+      font-size: @small_md_font;
+    }
+    .weui-cell__ft:after {
+      border-color: rgba(102, 102, 102, 0.8);
+    }
+    .list_border {
+      display: block;
+      width: 2px;
+      height: 15px;
+      position: absolute;
+      left: 0;
+      right: auto;
+      top: 33%;
+      border-radius: 8px;
+    }
+    .list_red_border {
+      background: @red_color !important;
+    }
+    .list_green_border {
+      background: @green_color !important;
+    }
+    .list_blue_border {
+      background: @blue_color !important;
+    }
+    .list_orange_border {
+      background: @orange_color !important;
+    }
+  }
+  .weui-cells:before,
+  .weui-cells:after {
+    border: none !important;
+  }
+}
+
+// 添加按钮样式
+.list_add_total {
+  width: 100%;
+  text-align: center;
+  .weui-btn {
+    display: block;
+    margin: 75px auto 10px auto;
+    width: 70px;
+    height: 70px;
+    border: 1px solid @border_aph_color;
+    border-radius: 100%;
+    background: @white_color;
+    padding: 0;
+    line-height: 70px;
+    color: @green_color;
+    font-size: @large_lg_font;
+    font-weight: 500;
+  }
+  .weui-btn:after {
+    display: none;
+  }
+  .list_add_text {
+    color: @green_color;
+    font-size: @small_md_font;
+    line-height: 20px;
+  }
+}

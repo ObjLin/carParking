@@ -1,0 +1,181 @@
+// 颜色样式
+@green_color: #00caa0;
+@black_color: #333333;
+@pray_font_color: #999999;
+@black_light_color: #666666;
+@border_second_color: #d8d8d8;
+@border_aph_color: rgba(216, 216, 216, 0.6);
+// 字体样式
+@small_sm_font: 1rem;
+@small_md_font: 1.167rem;
+@small_lg_font: 1.25rem;
+@normal_sm_font: 1.333rem;
+@normal_md_font: 1.5rem;
+@normal_lg_font: 1.92rem;
+@large_md_font: 2.5rem;
+@large_lg_font: 3.333rem;
+.payment_card {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 16px;
+    .payment_card_main {
+        width: 100%;
+        margin: 30px auto !important;
+        box-sizing: border-box;
+        padding: 0 16px;
+        border-radius: 6px;
+        border: 1px solid @border_aph_color;
+        .payment_card_head {
+            width: 100%;
+            border-bottom: 1px solid @border_second_color;
+            line-height: 20px;
+            padding: 15px 0;
+            h1 {
+                color: @black_color;
+                font-size: @normal_md_font;
+                float: left;
+            }
+            img {
+                display: block;
+                float: right;
+                width: 18px;
+                cursor: pointer;
+                margin-top: 2px;
+            }
+        }
+        .vux-card-content {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px 0; //   入场车辆详情
+            .payment_card_details {
+                width: 100%;
+                height: auto;
+                .payment_card_supply {
+                    text-align: center;
+                    color: @pray_font_color;
+                    font-size: @small_md_font;
+                    line-height: 20px;
+                }
+                .payment_card_money {
+                    display: inline-flex;
+                    width: 100%;
+                    margin: 10px auto;
+                    justify-content: center;
+                    font-size: @large_lg_font;
+                    color: @black_color;
+                    font-weight: 600;
+                    span {
+                        font-size: @large_md_font;
+                    }
+                }
+                .payment_card_time {
+                    display: inline-flex;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: @small_md_font;
+                    margin-bottom: 20px;
+                    color: @black_light_color;
+                    img {
+                        display: block;
+                        width: 13px;
+                        height: 13px;
+                        margin-right: 5px;
+                    }
+                }
+                .payment_card_submit {
+                    display: block;
+                    width: 90%;
+                    margin: 0 auto;
+                    background: @green_color;
+                    color: #ffffff;
+                    padding: 0 !important;
+                }
+            }
+        }
+        .weui-btn:after {
+            border: none !important;
+        } // 未入场车辆样式
+        .payment_not_record {
+            width: 90%;
+            margin: 30px auto;
+            text-align: center;
+            color: @black_light_color;
+            font-size: @normal_sm_font;
+            line-height: 20px;
+        } // 支付结果页面样式
+        .payment_result {
+            width: 100%;
+            text-align: center;
+            img {
+                display: block;
+                width: 13%;
+                max-width: 40px;
+                margin: 0 auto;
+            }
+            h3 {
+                color: @black_color;
+                font-size: @large_lg_font;
+                line-height: 30px;
+                margin-top: 20px;
+            }
+            p {
+                margin-top: 10px;
+                color: @black_color;
+                font-size: @small_md_font;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// 车辆列表样式
+.payment_car {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 16px;
+    .payment_car_list {
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid @border_aph_color;
+        border-radius: 6px;
+        overflow: hidden;
+        .vux-cell-no-border-intent {
+            .vux-label {
+                color: @black_light_color;
+                font-size: @normal_sm_font;
+            }
+        }
+        .weui-cell_access .weui-cell__ft:after {
+            height: 10px;
+            width: 10px;
+            border-color: @pray_font_color;
+        }
+        .weui-cells {
+            margin-top: 0 !important;
+        }
+        .weui-cells:before,
+        .weui-cells:after {
+            border: none !important;
+        }
+        .payment_radio_total {
+            border-top: 1px solid @border_aph_color;
+        }
+        .payment_radio_content {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            color: @black_light_color;
+            span {
+                margin-right: 20px;
+                font-size: @small_md_font;
+            }
+            p {
+                font-size: @normal_md_font;
+            }
+        }
+        .weui-cells_radio .weui-check:checked+.weui-icon-checked:before {
+            color: @green_color  !important;
+        }
+    }
+}

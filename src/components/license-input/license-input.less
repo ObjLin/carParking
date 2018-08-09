@@ -1,0 +1,144 @@
+@white_color: #ffffff;
+@green_color: #00caa0;
+@black_color: #333333;
+@black_light_color: #666666;
+@border_second_color: #d8d8d8;
+@border_aph_color: rgba(216, 216, 216, 0.6);
+// 字体样式
+@small_md_font: 1.167rem;
+@normal_sm_font: 1.333rem;
+@large_md_font: 2.5rem;
+@normal_md_font: 1.5rem;
+.license_content {
+  width: 100%;
+  margin: 0 auto;
+  .license_input {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    .weui-cell {
+      padding: 0;
+      width: 40px;
+      height: 40px;
+      box-sizing: border-box;
+      border-left: 1px solid @border_second_color;
+      border-top: 1px solid @border_second_color;
+      border-bottom: 1px solid @border_second_color;
+    }
+    .weui-icon-circle:first-child {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+    .weui-cell:last-child {
+      border-right: 1px solid @border_second_color;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+    .weui-cell:before {
+      border: none !important;
+    }
+    .weui-input {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      line-height: 40px;
+      font-size: @large_md_font;
+      color: @black_color;
+      text-transform: uppercase;
+    }
+  } // 标签样式
+  .license_choose {
+    width: 280px;
+    margin: 10px auto;
+    text-align: right;
+    font-size: @small_md_font;
+    .weui-icon-circle {
+      display: inline-block;
+      position: relative;
+      width: 12px;
+      height: 12px;
+      border: 1px solid @border_second_color;
+      border-radius: 2px;
+    }
+    .weui-icon-circle:before {
+      content: '';
+    }
+    span {
+      color: @black_light_color;
+      font-size: @small_md_font;
+      line-height: 20px;
+    }
+    .weui-icon-success {
+      display: inline-block;
+      background: @green_color;
+      width: 14px;
+      height: 14px;
+      position: relative;
+      border-radius: 2px;
+    }
+    .weui-icon-success:before {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      content: '';
+      background: url('../../assets/images/icon/check_icon_bg.png') no-repeat
+        center top;
+      background-size: contain;
+      position: absolute;
+      left: -2px;
+      top: 3px;
+      z-index: 10;
+    }
+  } // 键盘弹出层样式
+  .license_keyboard {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    background: @white_color;
+    border-top: 1px solid @border_aph_color;
+    padding-top: 4vw;
+    .license_city_list {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 2vw;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 4vw;
+      font-size: @normal_sm_font;
+      li {
+        width: 6vw;
+        height: 6vw;
+        line-height: 6vw;
+        margin-right: 4vw;
+        text-align: center;
+        background: @white_color;
+        color: @black_color;
+        box-sizing: border-box;
+        border-radius: 4px;
+        border: 1px solid @border_aph_color;
+      }
+      li:last-child {
+        margin-right: 0;
+      } // 关闭按钮样式
+      .license_city_close {
+        display: block;
+        width: 20vw;
+        height: 7vw;
+        line-height: 7vw;
+        text-align: center;
+        background: @white_color;
+        margin: 0 2vw;
+        padding: 0;
+        border-radius: 4px;
+        color: @black_color;
+        font-size: @normal_sm_font;
+        border: 1px solid @border_aph_color;
+      }
+    }
+  }
+}

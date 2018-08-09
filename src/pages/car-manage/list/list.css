@@ -1,0 +1,79 @@
+.car_list_total {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 16px;
+}
+.car_list_total .weui-cells {
+  margin-top: 16px !important;
+  background: transparent;
+}
+.car_list_total .weui-cell {
+  margin-bottom: 16px;
+  background: #ffffff;
+  border-radius: 4px;
+  position: relative;
+}
+.car_list_total .weui-cell .vux-label {
+  color: #333333;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.car_list_total .weui-cell .weui-cell__ft {
+  color: #666666;
+  font-size: 1.167rem;
+}
+.car_list_total .weui-cell .weui-cell__ft:after {
+  border-color: rgba(102, 102, 102, 0.8);
+}
+.car_list_total .weui-cell .list_border {
+  display: block;
+  width: 2px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  right: auto;
+  top: 33%;
+  border-radius: 8px;
+}
+.car_list_total .weui-cell .list_red_border {
+  background: #ff509a !important;
+}
+.car_list_total .weui-cell .list_green_border {
+  background: #00caa0 !important;
+}
+.car_list_total .weui-cell .list_blue_border {
+  background: #0094da !important;
+}
+.car_list_total .weui-cell .list_orange_border {
+  background: #fe723a !important;
+}
+.car_list_total .weui-cells:before,
+.car_list_total .weui-cells:after {
+  border: none !important;
+}
+.list_add_total {
+  width: 100%;
+  text-align: center;
+}
+.list_add_total .weui-btn {
+  display: block;
+  margin: 75px auto 10px auto;
+  width: 70px;
+  height: 70px;
+  border: 1px solid rgba(216, 216, 216, 0.6);
+  border-radius: 100%;
+  background: #ffffff;
+  padding: 0;
+  line-height: 70px;
+  color: #00caa0;
+  font-size: 3.333rem;
+  font-weight: 500;
+}
+.list_add_total .weui-btn:after {
+  display: none;
+}
+.list_add_total .list_add_text {
+  color: #00caa0;
+  font-size: 1.167rem;
+  line-height: 20px;
+}
